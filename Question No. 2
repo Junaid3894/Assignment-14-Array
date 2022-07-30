@@ -1,0 +1,20 @@
+/* Write a program to calculate the sum of numbers stored in array of size 10.Take array values from the user.*/
+#include <stdio.h>
+int main(){
+	int arr[10];
+	int i;
+	int sum=0;
+	int ave;
+	for(i=0;i<10;i++)
+	    {
+	    // Input array elements from user
+		printf("Enter the %d number :",i+1);
+		scanf("%d",&arr[i]);
+	    // add each elements to sum variable
+		sum+=arr[i];
+		}
+	ave=sum/10; // find the average thorugh divide by 10
+	printf("The average of this array is %d",ave);
+	
+   return 0;
+		}
