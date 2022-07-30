@@ -1,0 +1,27 @@
+/*Write a program to find the greatest number stored in an array of size 10. Take array
+values from the user.*/
+
+#include <stdio.h>
+int main(){
+	int arr[10];
+	int max;
+	int i;
+	for(i=0;i<10;i++)
+	    {
+	    // Input array elements from user
+		printf("Enter the %d number :",i+1);
+		scanf("%d",&arr[i]);
+	    }
+	 max=arr[0];   
+	 // find greatest element in an array   	
+	 for(i=0;i<10;i++){
+	 	// check current element in an array is maximum than element 1 
+	 	if(arr[i]>max)
+                   {
+	 	    max=arr[i];// storing it in max variable
+	 	   }
+	 		  }
+printf("Greatest number in an array is %d",max);
+	 			 			
+   return 0;
+		}
